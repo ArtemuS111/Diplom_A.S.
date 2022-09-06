@@ -1,13 +1,13 @@
 @font-face {
 	font-family: Open Sans;
-	src: url(fonts/OpenSans-Regular.woff);
+	src: url(../fonts/OpenSans-Regular.woff);
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: Open Sans;
-	src: url(fonts/OpenSans-Bold.woff);
+	src: url(../fonts/OpenSans-Bold.woff);
 	font-weight: 700;
 	font-style: normal;
 }
@@ -31,7 +31,7 @@ body {
 	padding-top: 30px;
 	padding-bottom: 125px;
 	background-color: #000000;
-	background-image: url(img/banner-bg.jpg);
+	background-image: url(../img/banner-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: bottom bottom;
@@ -174,7 +174,7 @@ body {
 
 .trends__bg__one {
 	background-color: #000000;
-	background-image: url(img/trend1.jpg);
+	background-image: url(../img/trend1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -182,21 +182,21 @@ body {
 
 .trends__bg__two {
 	background-color: #000000;
-	background-image: url(img/trend2.jpg);
+	background-image: url(../img/trend2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 }
 .trends__bg__three {
 	background-color: #000000;
-	background-image: url(img/trend3.jpg);
+	background-image: url(../img/trend3.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 }
 .trends__bg__four {
 	background-color: #000000;
-	background-image: url(img/trend4.jpg);
+	background-image: url(../img/trend4.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -440,7 +440,7 @@ body {
 	height: 45px;
 	border: none;
 	background-color: #b59f5b;
-	background-image: url(svg/search.svg);
+	background-image: url(../svg/search.svg);
 	background-size: 15px;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -636,21 +636,21 @@ body {
 	display: block;
 	width: 25px;
 	height: 25px;
-	background-image: url(svg/001-dribbble.svg);
+	background-image: url(../svg/001-dribbble.svg);
 }
 
 .social__icon__pinterest {
 	display: block;
 	width: 25px;
 	height: 25px;
-	background-image: url(svg/002-pinterest.svg);
+	background-image: url(../svg/002-pinterest.svg);
 }
 
 .social__icon__tumblr {
 	display: block;
 	width: 25px;
 	height: 25px;
-	background-image: url(svg/003-tumblr.svg);
+	background-image: url(../svg/003-tumblr.svg);
 }
 
 .copyrights {
@@ -702,7 +702,7 @@ body {
 	width: 15px;
 	height: 15px;
 	background-color: transparent;
-	background-image: url(svg/form-x.svg);
+	background-image: url(../svg/form-x.svg);
 	background-repeat: no-repeat;
 	background-size: 15px 15px;
 }
@@ -739,7 +739,7 @@ body {
 	width: 6px;
 	height: 15px;
 	background-color: transparent;
-	background-image: url(svg/form-arrows.svg);
+	background-image: url(../svg/form-arrows.svg);
 	background-repeat: no-repeat;
 	background-size: 6px 15px;
 }
@@ -778,7 +778,7 @@ body {
 	height: 15px;
 	margin-right: 5px;
 	background-color: transparent;
-	background-image: url(svg/form-empty-circle.svg);
+	background-image: url(../svg/form-empty-circle.svg);
 	background-repeat: no-repeat;
 	background-size: 15px 15px;
 }
@@ -793,7 +793,7 @@ body {
 	width: 15px;
 	height: 15px;
 	background-color: transparent;
-	background-image: url(svg/form-circle.svg);
+	background-image: url(../svg/form-circle.svg);
 	background-repeat: no-repeat;
 	background-size: 15px 15px;
 	display: none;
