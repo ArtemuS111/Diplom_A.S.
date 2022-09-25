@@ -90,6 +90,7 @@ body {
 
 .nav__link:hover {
 	text-decoration: underline;
+	font-weight: bold;
 }
 
 .title {
@@ -216,6 +217,7 @@ body {
 .trends__card__list {
 	line-height: 0.9;
 	display: flex;
+	flex-wrap: wrap;
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
@@ -235,6 +237,7 @@ body {
 
 .trends__card__link:hover {
 	text-decoration: underline;
+	text-shadow: 1px 1px 1px #b59f5b;
 }
 
 .trends__card__title {
@@ -249,6 +252,7 @@ body {
 
 .trends__card__title:hover {
 	text-shadow: 1px 1px 1px #b59f5b;
+	font-weight: bold;
 }
 
 .content {
@@ -276,6 +280,7 @@ body {
 
 .main__post__img {
 	width: 380px;
+	min-width: 380px;
 }
 
 .main__post__content {
@@ -285,6 +290,7 @@ body {
 .main__post__list {
 	line-height: 0.9;
 	display: flex;
+	flex-wrap: wrap;
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
@@ -304,6 +310,7 @@ body {
 
 .main__post__link:hover {
 	text-decoration: underline;
+	text-shadow: 1px 1px 1px #b59f5b;
 }
 
 .main__post__title {
@@ -380,6 +387,7 @@ body {
 
 .section__post__img {
 	width: 70px;
+	min-width: 70px;
 	margin-right: 20px;
 }
 
@@ -506,6 +514,10 @@ body {
 	border: 2px solid #eeeeee;
 }
 
+.tags__list__link:hover {
+	text-shadow: 1px 1px 1px #000000;
+}
+
 .categories__list {
 	padding: 0;
 	margin: 20px 0 0 0;
@@ -518,10 +530,6 @@ body {
 	border-bottom: 1px solid #eeeeee;
 }
 
-.categories__list__item:hover {
-	text-shadow: 1px 1px 1px #b59f5b;
-}
-
 .categories__list__link {
 	text-transform: capitalize;
 	text-decoration: none;
@@ -530,8 +538,13 @@ body {
 	color: inherit;
 }
 
+.categories__list__link:hover {
+	text-shadow: 1px 1px 1px #b59f5b;
+}
+
 .sup__color {
 	color: #b59f5b;
+	font-weight: bold;
 	vertical-align: 0.5em;
 }
 
@@ -837,9 +850,71 @@ body {
 	color: #ffffff;
 }
 
+.header__burger {
+	display: none;
+}
+
 @media (min-width: 641px) and (max-width: 1200px) {
+	.box {
+		padding: 10px 35px;
+	}
+	
+	.header__burger {
+		display: block;
+		position: relative;
+		width: 20px;
+		height: 20px;
+		margin: auto 0;
+	}
+
+	.header__burger span {
+		background-color: #ffffff;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		top: 9px;
+	}
+
+	.header__burger:before, 
+	.header__burger:after {
+		content: "";
+		background-color: #ffffff;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+	}
+
+	.header__burger:before {
+		top: 0;
+	}
+
+	.header__burger:after {
+		bottom: 0;
+	}
+
+	.nav {
+		display: none;
+	}
+	
 	.trends__card {
 		width: 50%;
+		border: 2px solid white;
+		box-sizing: border-box;
+	}
+
+	.content {
+		margin: 50px 0;
+		padding: 0 35px;
+	}
+
+	.main {
+		width: 425px;
+	}
+
+	.main__post {
+		margin-right: 35px;
 	}
 
 	.main__post {
@@ -848,13 +923,12 @@ body {
 		margin-right: 30px;
 	}
 
-	.shop__box {
-		width: 50%;
-		flex-wrap: wrap;
+	.main__post__content {
+		margin-top: 10px;
+		margin-left: 0;
+		border-bottom: 3px solid #eeeeee;
 	}
 
-	.shop__card {
-		width: 50%;
+	.main__post__text {
+		margin-bottom: 20px;
 	}
-	
-}
