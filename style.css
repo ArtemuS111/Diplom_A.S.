@@ -544,6 +544,7 @@ body {
 
 .sup__color {
 	color: #b59f5b;
+	font-size: 12px;
 	font-weight: bold;
 	vertical-align: 0.5em;
 }
@@ -679,8 +680,11 @@ body {
 	text-decoration: none;
 }
 
-.popup {
+.popup__hidden {
 	display: none;
+}
+
+.popup {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -931,4 +935,13 @@ body {
 
 	.main__post__text {
 		margin-bottom: 20px;
+	}
+
+	.shop__box {
+		max-width: 100%;
+	}
+
+	.shop__card {
+		width: 50%;
+		box-sizing: border-box;
 	}
