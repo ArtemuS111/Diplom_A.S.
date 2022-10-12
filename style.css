@@ -90,7 +90,6 @@ body {
 
 .nav__link:hover {
 	text-decoration: underline;
-	font-weight: bold;
 }
 
 .title {
@@ -237,7 +236,6 @@ body {
 
 .trends__card__link:hover {
 	text-decoration: underline;
-	text-shadow: 1px 1px 1px #b59f5b;
 }
 
 .trends__card__title {
@@ -251,13 +249,12 @@ body {
 }
 
 .trends__card__title:hover {
-	text-shadow: 1px 1px 1px #b59f5b;
+	color: #b59f5b;
 	font-weight: bold;
 }
 
 .content {
 	max-width: 1200px;
-	margin-top: 65px;
 	margin: 65px auto;
 	display: flex;
 	flex-direction: row;
@@ -310,7 +307,6 @@ body {
 
 .main__post__link:hover {
 	text-decoration: underline;
-	text-shadow: 1px 1px 1px #b59f5b;
 }
 
 .main__post__title {
@@ -323,7 +319,7 @@ body {
 }
 
 .main__post__title:hover {
-	text-shadow: 1px 1px 1px #b59f5b;
+	color: #b59f5b;
 }
 
 .main__post__author {
@@ -408,7 +404,7 @@ body {
 }
 
 .section__post__content:hover {
-	text-shadow: 1px 1px 1px #b59f5b;
+	color: #b59f5b;
 }
 
 .search {
@@ -539,7 +535,7 @@ body {
 }
 
 .categories__list__link:hover {
-	text-shadow: 1px 1px 1px #b59f5b;
+	color: #b59f5b;
 }
 
 .sup__color {
@@ -550,17 +546,20 @@ body {
 }
 
 .shop {
+	max-width: 1200px;
+	margin: auto;
 	margin-bottom: 65px;
 }
 
 .shop__box {
 	margin: auto;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
-	width: 25%;
 }
 
 .shop__card {
+	width: 25%;
 	display: flex;
 	flex-direction: column;
 	margin-right: 110px;
@@ -572,9 +571,9 @@ body {
 
 .shop__card__content {
 	display: flex;
-	flex-wrap: wrap;
 	flex-grow: 1;
-	justify-content: space-between;
+	flex-direction: column;
+	justify-content: flex-start;
 	border: 3px solid #d3c59d;
 	padding: 20px;
 	margin-top: -30px;
@@ -600,6 +599,12 @@ body {
 	font-size: 15px;
 	margin-top: 10px;
 	margin-bottom: 20px;
+}
+
+.shop__card__box {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .shop__card__price {
@@ -937,11 +942,23 @@ body {
 		margin-bottom: 20px;
 	}
 
+	.shop {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
 	.shop__box {
-		max-width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		justify-content: flex-start;
+		box-sizing: border-box;
 	}
 
 	.shop__card {
-		width: 50%;
-		box-sizing: border-box;
+		min-width: 290px;
+		margin-right: 30px;
+		margin-left: 30px;
+		margin-bottom: 30px;
 	}
