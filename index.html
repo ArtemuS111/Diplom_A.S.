@@ -328,6 +328,7 @@
 			<a class="trends__link" href="#">Наши изделия</a>
 		</h3>
 		<div class="shop__box">
+			
 			<article class="shop__card">
 				<picture class="trends__picture">
 					<source srcset="img/shop-item-tablet1.jpg" media="(max-width: 1600px)">
@@ -337,10 +338,12 @@
 				<div class="shop__card__content">
 					<h2 class="shop__card__title"><a href="#" class="shop__card__title">Подушки на диван</a></h2>
 					<p class="shop__card__text">Набор из двух подушек с модными принтами. Видео о создании <a href="#" class="shop__card__link">здесь</a>.</p>
-					<p class="shop__card__price"><span class="text__high__price">1000 ₽</span><br>800 ₽</p>
-					<form class="shop__card__bottom">
-						<button class="shop__button__buy"><span class="hidden__text">Кнопка в магазин</span>в магазин</button>
-					</form>
+					<div class="shop__card__box">
+						<p class="shop__card__price"><span class="text__high__price">1000 ₽</span><br>800 ₽</p>
+						<form class="shop__card__bottom">
+							<button class="shop__button__buy"><span class="hidden__text">Кнопка в магазин</span>в магазин</button>
+						</form>
+					</div>
 				</div>
 			</article>
 			<article class="shop__card">
@@ -352,10 +355,12 @@
 				<div class="shop__card__content">
 					<h2 class="shop__card__title"><a href="#" class="shop__card__title">Кукла «Зайчик»</a></h2>
 					<p class="shop__card__text">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#" class="shop__card__link">весенняя серия постов</a> в блоге и несколько подкастов.</p>
-					<p class="shop__card__price">3500 ₽</p>
-					<form class="shop__card__bottom">
-						<button class="shop__button__buy"><span class="hidden__text">Кнопка в магазин</span>в магазин</button>
-					</form>
+					<div class="shop__card__box">
+						<p class="shop__card__price">3500 ₽</p>
+						<form class="shop__card__bottom">
+							<button class="shop__button__buy"><span class="hidden__text">Кнопка в магазин</span>в магазин</button>
+						</form>
+					</div>
 				</div>
 			</article>
 			<article class="shop__card shop__card__last">
@@ -367,12 +372,15 @@
 				<div class="shop__card__content">
 					<h2 class="shop__card__title"><a href="#" class="shop__card__title">Шестиугольная рамка</a></h2>
 					<p class="shop__card__text">Необычная рамка для украшения дома из видео <a href="#" class="shop__card__link">«Как сделать рамку из подручных средств за 30 минут»</a></p>
-					<p class="shop__card__price"><span class="text__high__price">500 ₽</span><br>400 ₽</p>
-					<form class="shop__card__bottom">
-						<button class="shop__button__buy"><span class="hidden__text">Кнопка в магазин</span>в магазин</button>
-					</form>
+					<div class="shop__card__box">
+						<p class="shop__card__price"><span class="text__high__price">500 ₽</span><br>400 ₽</p>
+						<form class="shop__card__bottom">
+							<button class="shop__button__buy"><span class="hidden__text">Кнопка в магазин</span>в магазин</button>
+						</form>
+					</div>
 				</div>
 			</article>
+		
 		</div>
 	</section>
 	<footer class="footer">
@@ -401,8 +409,10 @@
 					<a class="trends__link" href="#">ваш фидбек</a>
 				</h2>
 				<div class="select">
-					<label class="select__title">Как часто вы заходите на сайт?
+					<label>
 						<button class="select__button" type="button"></button>
+					</label>
+					<label class="select__title">Как часто вы заходите на сайт?
 						<select class="select__form" name="site">
 							<option value="">Почти каждый день</option>
 							<option value="">Через день</option>
